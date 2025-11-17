@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>미래융합회 황태진 초대회장 취임식 초대장</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- 기본 메타 -->
+  <meta name="description" content="미래융합회 황태진 초대회장 취임식 초대장입니다. 2025년 12월 10일, 엔젤스데이에서 개최됩니다." />
+
+  <!-- 카카오톡/메신저 공유용 미리보기 이미지 설정 -->
+  <meta property="og:title" content="미래융합회 황태진 초대회장 취임식 초대장" />
+  <meta property="og:description" content="2025년 12월 10일(수) 오후 6시, 엔젤스데이에서 개최되는 미래융합회 황태진 초대회장 취임식에 정중히 초대합니다." />
+  <!-- 🔹 미리보기 이미지를 preview.jpg로 변경 (절대 경로) -->
+  <meta property="og:image" content="https://dantanmoco.github.io/future-invitation/preview.jpg" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      position: relative;
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Apple SD Gothic Neo",
+        "맑은 고딕", "Malgun Gothic", sans-serif;
+      color: #222;
+      line-height: 1.7;
+      /* 전체 배경 사진 + 톤 */
+      background: #e3ddd2 url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      z-index: 0;
+    }
+
+    /* 배경 위에 흰색+블러 오버레이 */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(4px);
+      z-index: -1;
+    }
+
+    .page-wrapper {
+      max-width: 880px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+      border: 1px solid #d5d9e4;
+      padding: 28px 20px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 카드 하단 네이비 곡선 영역 */
+    .card::after {
+      content: "";
+      position: absolute;
+      left: -12%;
+      bottom: -42%;
+      width: 124%;
+      height: 60%;
+      background: #111827;
+      clip-path: polygon(0 35%, 50% 0, 100% 35%, 100% 100%, 0 100%);
+      opacity: 0.95;
+      z-index: -1;
+    }
+
+    .hero-image-wrap {
+      border-radius: 18px;
+      overflow: hidden;
+      margin-bottom: 26px;
+      border: 1px solid #e1e3ec;
+    }
+
+    .hero-image {
+      width: 100%;
+      display: block;
+    }
+
+    /* 🔹 제목 모바일 깨짐 최소화용 새 스타일 */
+    .title-main {
+      font-size: 1.9rem;           /* 데스크탑 약 30px */
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.08em;      /* 너무 넓지 않게 */
+      margin-bottom: 6px;
+      color: #1b2140;
+      word-break: keep-all;        /* 한국어 단어 중간 잘림 방지 */
+    }
+
+    @media (max-width: 480px) {
+      .title-main {
+        font-size: 1.4rem;         /* 모바일 약 22px */
+        letter-spacing: 0.04em;
+        padding: 0 6px;            /* 좌우 살짝 여유 */
+      }
+    }
+
+    .title-sub {
+      font-size: 0.95rem;
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+      padding: 0 10px;
+      word-break: keep-all;
+    }
+
+    .divider {
+      width: 80px;
+      height: 2px;
+      background: #222;
+      margin: 6px auto 26px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #666;
+      margin-bottom: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .box {
+      background: #ffffff;
+      border: 1px solid #ececf0;
+      padding: 18px 20px;
+      border-radius: 14px;
+      margin-bottom: 22px;
+    }
+
+    .info-row,
+    .schedule-row {
+      display: flex;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .label {
+      width: 90px;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .value {
+      flex: 1;
+      color: #333;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      margin: 24px 0 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      border: 1px solid #111;
+      background: #111;
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn:hover {
+      background: #000;
+      transform: translateY(-2px);
+    }
+
+    /* 임원진 섹션 */
+    .members-section {
+      margin-top: 42px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #111827, #1f2937);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 26px 20px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .members-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #f7e6b8, #d4af37, #f7e6b8);
+    }
+
+    .members-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .members-section .section-title {
+      color: #f5e6c4;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .members-subtitle {
+      text-align: center;
+      font-size: 13px;
+      color: #e5e7eb;
+      margin-bottom: 18px;
+    }
+
+    .member-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .member-item {
+      width: calc(33.33% - 20px);
+      max-width: 180px;
+      text-align: center;
+      color: #f9fafb;
+    }
+
+    .member-item img {
+      width: 100%;
+      max-width: 150px;
+      height: 190px; /* 반명함 비율 */
+      object-fit: cover;
+      border-radius: 10px; /* 네모 */
+      border: 2px solid rgba(243, 244, 246, 0.85);
+      background: #fff;
+      margin-bottom: 10px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .member-item:hover img {
+      transform: scale(1.04);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.35);
+      border-color: #f5d37b;
+    }
+
+    .member-role {
+      font-size: 12px;
+      font-weight: 600;
+      color: #fbbf24;
+      letter-spacing: 0.06em;
+    }
+
+    .member-name {
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 3px;
+      color: #f9fafb;
+    }
+
+    @media (max-width: 640px) {
+      .member-item {
+        width: calc(50% - 20px);
+      }
+    }
+
+    /* 지도 섹션(이미지 + 버튼) */
+    .map-section {
+      margin-top: 40px;
+    }
+
+    .map-card {
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #e1e3ec;
+      padding: 16px 18px 18px;
+    }
+
+    .map-image-wrap {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      margin-bottom: 12px;
+    }
+
+    .map-image {
+      width: 100%;
+      display: block;
+    }
+
+    .map-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .map-note {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #f5f5f5;
+      margin-top: 34px;
+      padding-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <div class="card">
+
+      <!-- 상단 포스터 이미지: poster.jpg -->
+      <div class="hero-image-wrap">
+        <img src="poster.jpg" alt="미래융합회 황태진 초대회장 취임식 포스터" class="hero-image" />
+      </div>
+
+      <h1 class="title-main">미래융합회 황태진 초대회장 취임식</h1>
+      <h2 class="title-sub">미래융합회의 새로운 출발에 정중히 모십니다.</h2>
+      <div class="divider"></div>
+
+      <!-- 인사말 -->
+      <section class="box">
+        <div class="section-title">인사말</div>
+        <p>
+          존경하는 내외 귀빈 여러분께 깊이 감사의 말씀을 올립니다.<br><br>
+          바쁘신 일정에도 불구하고 이 자리에 함께해 주시어, 부족한 제가 미래융합회 초대 회장으로서 첫 걸음을 내딛는 이 뜻깊은 자리를 빛내 주심에 진심으로 감사드립니다.
+        </p>
+        <p>
+          미래융합회는 다양한 분야의 리더들이 서로의 지혜와 역량을 나누며 지역사회와 국가 발전에 기여하고자 뜻을 모은 단체입니다. 저는 여러분의 기대에 부응할 수 있도록, 겸허한 자세로 소통하고 협력하며 단체가 나아가야 할 길을 성실히 열어가겠습니다.
+        </p>
+        <p>
+          오늘 김포지회 정기총회와 함께하는 이 자리가 회원 간 연대와 신뢰를 더욱 굳건히 하고, 미래융합회의 새로운 도약의 출발점이 되기를 진심으로 소망합니다. 변함없는 성원과 지도 편달을 부탁드립니다.
+        </p>
+        <p style="margin-top:14px; text-align:right;">
+          2025년 12월 10일<br>
+          미래융합회 초대 회장&nbsp;&nbsp;<strong>황태진</strong> 올림
+        </p>
+      </section>
+
+      <!-- 행사 안내 -->
+      <section class="box">
+        <div class="section-title">행사 안내</div>
+
+        <div class="info-row">
+          <div class="label">일시</div>
+          <div class="value">2025년 12월 10일(수) 오후 6시</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">장소</div>
+          <div class="value">엔젤스데이 (경기도 김포시 김포한강4로 113, 신한프라자 12층)</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">주최</div>
+          <div class="value">미래융합회</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">문의</div>
+          <div class="value">담당자 / 010-0000-0000</div>
+        </div>
+      </section>
+
+      <!-- 행사 순서 -->
+      <section class="box">
+        <div class="section-title">행사 순서</div>
+
+        <div class="schedule-row">
+          <div class="label">17:00</div>
+          <div class="value">김포지회 정기총회</div>
+        </div>
+
+        <div class="schedule-row">
+          <div class="label">18:00</div>
+          <div class="value">미래융합회 회장 취임식</div>
+        </div>
+
+        <div class="schedule-row">
+          <div class="label">18:30</div>
+          <div class="value">송년회 및 시상식</div>
+        </div>
+      </section>
+
+      <!-- 버튼: 오시는 길만 -->
+      <div class="btn-row">
+        <a href="#map-section" class="btn">오시는 길 보기</a>
+      </div>
+
+      <!-- 임원진 섹션 -->
+      <section class="members-section">
+        <div class="members-inner">
+          <div class="section-title">미래융합회 임원 소개</div>
+          <div class="members-subtitle">
+            취임식 및 향후 회무를 함께 이끌어갈 임원진을 소개합니다.
+          </div>
+
+          <div class="member-grid">
+            <!-- 1. 회장 -->
+            <div class="member-item">
+              <img src="황태진.jpg" alt="미래융합회 회장 황태진">
+              <div class="member-role">미래융합회 회장</div>
+              <div class="member-name">황태진</div>
+            </div>
+
+            <!-- 2. 사무국장 -->
+            <div class="member-item">
+              <img src="최종민.jpg" alt="미래융합회 사무국장 최종민">
+              <div class="member-role">미래융합회 사무국장</div>
+              <div class="member-name">최종민</div>
+            </div>
+
+            <!-- 3. 감사 -->
+            <div class="member-item">
+              <img src="이동석.jpg" alt="미래융합회 감사 이동석">
+              <div class="member-role">미래융합회 감사</div>
+              <div class="member-name">이동석</div>
+            </div>
+
+            <!-- 4. 부회장 김도연 -->
+            <div class="member-item">
+              <img src="김도연.jpg" alt="미래융합회 부회장 김도연">
+              <div class="member-role">미래융합회 부회장</div>
+              <div class="member-name">김도연</div>
+            </div>
+
+            <!-- 5. 부회장 전영재 -->
+            <div class="member-item">
+              <img src="전영재.jpg" alt="미래융합회 부회장 전영재">
+              <div class="member-role">미래융합회 부회장</div>
+              <div class="member-name">전영재</div>
+            </div>
+
+            <!-- 6. 부회장 박지연 -->
+            <div class="member-item">
+              <img src="박지연.jpg" alt="미래융합회 부회장 박지연">
+              <div class="member-role">미래융합회 부회장</div>
+              <div class="member-name">박지연</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 오시는 길 섹션 -->
+      <section id="map-section" class="map-section">
+        <div class="section-title">오시는 길</div>
+
+        <div class="map-card">
+          <div class="map-image-wrap">
+            <img src="map.jpg" alt="엔젤스데이 위치 지도" class="map-image">
+          </div>
+
+          <div class="map-buttons">
+            <a
+              href="https://map.naver.com/v5/search/%EC%97%94%EC%A0%A4%EC%8A%A4%EB%8D%B0%EC%9D%B4%20%EA%B9%80%ED%8F%AC"
+              target="_blank"
+              class="btn"
+              style="font-size: 13px;"
+            >
+              네이버 지도에서 엔젤스데이 길찾기
+            </a>
+          </div>
+
+          <div class="map-note">
+            버튼을 클릭하시면 네이버 지도 앱 또는 웹에서 ‘엔젤스데이’ 위치가 열리며,
+            길찾기 기능을 이용하실 수 있습니다.
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        미래융합회 황태진 초대회장 취임식을 찾아주셔서 감사합니다.<br>
+        <strong>미래융합회 일동</strong>
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
