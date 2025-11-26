@@ -321,6 +321,39 @@
       margin-top: 34px;
       padding-top: 12px;
     }
+
+    /* 쌀화환 안내 박스 */
+.donation-box {
+  background: linear-gradient(135deg, #faf7e8, #fffdf5);
+  border: 2px solid #e5d9a3;
+  border-radius: 14px;
+  padding: 20px 18px;
+  margin: 22px 0;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.donation-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #8a6d2d;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.donation-text {
+  font-size: 14px;
+  color: #5c4b1f;
+  line-height: 1.6;
+}
+
+.donation-text strong {
+  font-weight: 800;
+  color: #805d00;
+  background: #fff3c4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
   </style>
 </head>
 <body>
@@ -381,16 +414,15 @@
         </div>
       </section>
 
-      <div class="info-row">
-  <div class="label">비고</div>
-  <div class="value">
-    본 취임식은 어려운 이웃을 돕기 위한 기부행사를 함께 진행합니다.<br>
-    화환은 <strong>쌀화환</strong>으로 보내주시면 감사하겠습니다.
+<!-- 쌀화환 안내 박스 -->
+<div class="donation-box">
+  <div class="donation-title">화환 안내</div>
+  <div class="donation-text">
+    미래융합회는 행사와 함께 <strong>어려운 이웃을 돕는 기부 행사</strong>를 진행합니다.<br>
+    이에 화환은 <strong>쌀화환으로 부탁</strong>드리며, 보내주신 쌀은 전액 지역사회에 전달됩니다.<br>
+    따뜻한 나눔에 동참해 주시면 감사하겠습니다.
   </div>
-</div>
-      .value strong {
-  color: #b8860b;
-}
+</div> 
     
       <!-- 행사 순서 -->
       <section class="box">
@@ -507,6 +539,7 @@
   </div>
 </body>
 </html>
+
 
 
 
